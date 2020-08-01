@@ -306,9 +306,9 @@ Here is an example:
 
 ## Supplementary files
 These audio files were included as supplementary files in our original submission to ISMIR 2020.
-- [Four samples for dataset ASF-4](Supplementary_1_ASF_4)
-- [Three samples for dataset HP-10](Supplementary_2_HP_10)
-- [Three samples for dataset LPD-5](Supplementary_3_LPD_5)
+- [Four samples for dataset ASF-4](Samples/Supplementary_1_ASF_4)
+- [Three samples for dataset HP-10](Samples/Supplementary_2_HP_10)
+- [Three samples for dataset LPD-5](Samples/Supplementary_3_LPD_5)
 
 ## Surveys
 To validate the CONLON approach, we conducted three listening experiments with a group of 69 musicians. Here we provide the listening material and the raw survey data.
