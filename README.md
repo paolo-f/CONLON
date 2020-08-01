@@ -298,10 +298,10 @@ Non-trainable params: 1,344
 ```
 
 ## Swirls
-Swirls are constructed by creating trajectories in the latent space according to the following equations:
-```math
-f(t;a_l,b_l,c_l,d_l) = e^{ja_lt} - e^{jb_lt}/2 + j e^{jc_lt}/3 + e^{jd_lt}/4
-```
+Swirls are constructed by creating trajectories in the latent space according to the following complex equation:
+![sweq](./figures/sweq.png)
+
+Here is an example:
 ![Swirl](./figures/swirl.png)
 
 ## Supplementary files
