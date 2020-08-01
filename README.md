@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+## CONLON MIDI music generator
 
-You can use the [editor on GitHub](https://github.com/paolo-f/CONLON/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+CONLON is a pattern-based MIDI music generator with three main features:
+- A novel pianoroll-like description of patterns
+- Wasserstein eutoencoders as the underlying generative model
+- Optimal trajectories for interpolation and swirls.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+CONLON was developed as a collaborative effort between the [AI Lab](https://ai.dinfo.unifi.it) at [DINFO](https://dinfo.unifi.it), [University of Florence](https://www.unifi.it), (Italy) and [MUSI-CO](https://www.musi-co.com/), a music generation startup based in Eindhoven (the Netherlands).
 
-### Markdown
+This page contains additional information and data for the paper
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+L. Angioloni, T. Borghuis, L. Brusci, and P. Frasconi. CONLON: A Pseudo-Song Generator Based on a New Pianoroll, Wasserstein Autoencoders, and Optimal Interpolations. __In  Proceedings of the 21st International Society for Music Information Retrieval Conference__, ISMIR 2020.
 
-```markdown
-Syntax highlighted code block
+## Dataset
+The paper comes with two novel datasets especially composed by professional musicians for this research. Datasets are made available here **exclusively for academic research purposes** and cannot be used in any commercial project.
 
-# Header 1
-## Header 2
-### Header 3
+### ASF-4
+This is a dataset in genres __Acid Jazz__, __Soul__, and __Funk__. It consists of 910 patterns of four 4/4 bars each, with four instruments: Drums, Bass, Rhodes piano, Hammond organ. [Download MIDI files](./ASF-4.tgz)
 
-- Bulleted
-- List
+### HP-10
+This is a dataset in genres __High Pop__ and __Progressive Trance__. It consists of 983 patterns of four 4/4 bars each, with ten instruments: drums, bass,
+Rhodes, brass-synth, choir, dark-pad, guitar, lead, pad, and strings. [Download MIDI files](./HP-10.tgz)
 
-1. Numbered
-2. List
+## Source code
+We are sorry that source code cannot be provided at this time. The [WAE implementation of Ilya Tolstikhin](https://github.com/tolstikhin/wae) is a good starting point for developing the generator.
 
-**Bold** and _Italic_ and `Code` text
+## Archtecture details
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/paolo-f/CONLON/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+We provide here a Keras `model.summary()` for the architectures used in the paper.
