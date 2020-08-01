@@ -14,13 +14,13 @@ Table of Contents
 -----------------
 
 * [Datasets](#datasets)
-  * [Architecture details](#architecture-details)
-  * [Features](#features)
-  * [Swirls](#swirls)
-  * [Supplementary files](#supplementary-files)
-  * [Surveys](#surveys)
-  * [Source code](#source-code)
-  * [Acknowledments](#acknowledment)
+* [Architecture details](#architecture-details)
+* [Features](#features)
+* [Swirls](#swirls)
+* [Supplementary files](#supplementary-files)
+* [Surveys](#surveys)
+* [Source code](#source-code)
+* [Acknowledments](#acknowledment)
 
 ## Datasets
 The paper comes with two novel datasets especially composed by professional musicians for this research. Datasets are made available here **exclusively for academic research purposes** and cannot be used in any commercial project. Please cite the above paper if you use these datasets in your research work.
