@@ -20,7 +20,7 @@ The paper comes with two novel datasets especially composed by professional musi
 Rhodes, brass-synth, choir, dark-pad, guitar, lead, pad, and strings. [Download MIDI files](./HP-10.tgz)
 
 
-## Archtecture details
+## Architecture details
 
 We provide here a Keras `model.summary()` for the architectures used in the paper.
 
@@ -296,6 +296,13 @@ Total params: 7,610,671
 Trainable params: 7,609,327
 Non-trainable params: 1,344
 ```
+
+## Swirls
+Swirls are constructed by creating trajectories in the latent space according to the following equations:
+$$
+f(t;a_l,b_l,c_l,d_l) = e^{ja_lt} - e^{jb_lt}/2 + j e^{jc_lt}/3 + e^{jd_lt}/4
+$$
+![Swirl](./figures/swirl.png)
 
 ## Supplementary files
 These audio files were included as supplementary files in our original submission to ISMIR 2020.
