@@ -1,4 +1,9 @@
-## CONLON MIDI music generator
+# CONLON MIDI music generator
+
+This page contains additional information and data for the paper
+
+L. Angioloni, T. Borghuis, L. Brusci, and P. Frasconi. CONLON: A Pseudo-Song Generator Based on a New Pianoroll, Wasserstein Autoencoders, and Optimal Interpolations. *In  Proceedings of the 21st International Society for Music Information Retrieval Conference*, ISMIR 2020.
+
 
 CONLON is a pattern-based MIDI music generator with three main features:
 - A novel pianoroll-like description of patterns
@@ -7,9 +12,17 @@ CONLON is a pattern-based MIDI music generator with three main features:
 
 CONLON was developed as a collaborative effort between the [AI Lab](http://ai.dinfo.unifi.it) at [DINFO](http://dinfo.unifi.it), [University of Florence](https://www.unifi.it), (Italy) and [MUSI-CO](https://www.musi-co.com/), a music generation startup based in Eindhoven (the Netherlands).
 
-This page contains additional information and data for the paper
+Table of Contents
+-----------------
 
-L. Angioloni, T. Borghuis, L. Brusci, and P. Frasconi. CONLON: A Pseudo-Song Generator Based on a New Pianoroll, Wasserstein Autoencoders, and Optimal Interpolations. *In  Proceedings of the 21st International Society for Music Information Retrieval Conference*, ISMIR 2020.
+* [Datasets](#datasets)
+  * [Architecture details](#architecture-details)
+  * [Features](#features)
+  * [Swirls](#swirls)
+  * [Supplementary files](#supplementary-files)
+  * [Surveys](#surveys)
+  * [Source code](#source-code)
+  * [Acknowledments](#acknowledment)
 
 ## Datasets
 The paper comes with two novel datasets especially composed by professional musicians for this research. Datasets are made available here **exclusively for academic research purposes** and cannot be used in any commercial project. Please cite the above paper if you use these datasets in your research work.
@@ -209,6 +222,7 @@ Non-trainable params: 1,344
 ```
 
 ### Encoder/decoder for the LPD-5 dataset
+
 ```
 Model: "encoder"
 _________________________________________________________________
@@ -296,6 +310,7 @@ Total params: 7,610,671
 Trainable params: 7,609,327
 Non-trainable params: 1,344
 ```
+
 
 ## Swirls
 Swirls are constructed by creating trajectories in the latent space according to the following complex equation:
