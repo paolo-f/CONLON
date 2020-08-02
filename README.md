@@ -31,6 +31,40 @@ The paper comes with two novel datasets especially composed by professional musi
 Rhodes, brass-synth, choir, dark-pad, guitar, lead, pad, and strings. [Download MIDI files](./HP-10.tgz)
 
 
+
+
+## Swirls
+Swirls are constructed by creating trajectories in the latent space according to the following complex equation:
+![sweq](./figures/sweq.png)
+
+Here is an example:
+![Swirl](./figures/swirl.png)
+
+## Supplementary files
+These audio files were included as supplementary files in our original submission to ISMIR 2020.
+- [Four samples for dataset ASF-4](Samples/Supplementary_1_ASF_4)
+- [Three samples for dataset HP-10](Samples/Supplementary_2_HP_10)
+- [Three samples for dataset LPD-5](Samples/Supplementary_3_LPD_5)
+
+## Surveys
+To validate the CONLON approach, we conducted three listening experiments with a group of 69 musicians (see Section 6 in the paper). Here we provide the listening material and the raw survey data.
+
+### CONLON vs. MuseGAN (Section 6.1)
+- [Pairs of pseudo-songs proposed to human listeners](./Surveys/Experiment_I_CONLON_vs_MuseGAN_Pairs/)
+- [Spreasheet](./Surveys/Experiment_I_CONLON_vs_MuseGAN.xlsx)
+
+### Pianorolls vs. CONLON pianorolls (Section 6.2)
+- [Pairs of pseudo-songs proposed to human listeners](./Surveys/Experiment_II_Pianorolls_Pairs/)
+- [Spreasheet](./Surveys/Experiment_II_Pianorolls.xlsx)
+
+### Development over time (Section 6.3)
+- [Pseudo-songs](./Surveys/Experiment_III_Development/)
+- [Spreasheet](./Surveys/Experiment_III_Development.xlsx)
+
+
+## Source code
+We are sorry that source code cannot be provided at this time (please do not ask, if code can be made available it will appear here). The [WAE implementation of Ilya Tolstikhin](https://github.com/tolstikhin/wae) is a good starting point for developing the generative model.
+
 ## Architecture details
 
 We provide here a Keras `model.summary()` for the architectures used in the paper.
@@ -309,38 +343,6 @@ Trainable params: 7,609,327
 Non-trainable params: 1,344
 ```
 
-
-## Swirls
-Swirls are constructed by creating trajectories in the latent space according to the following complex equation:
-![sweq](./figures/sweq.png)
-
-Here is an example:
-![Swirl](./figures/swirl.png)
-
-## Supplementary files
-These audio files were included as supplementary files in our original submission to ISMIR 2020.
-- [Four samples for dataset ASF-4](Samples/Supplementary_1_ASF_4)
-- [Three samples for dataset HP-10](Samples/Supplementary_2_HP_10)
-- [Three samples for dataset LPD-5](Samples/Supplementary_3_LPD_5)
-
-## Surveys
-To validate the CONLON approach, we conducted three listening experiments with a group of 69 musicians (see Section 6 in the paper). Here we provide the listening material and the raw survey data.
-
-### CONLON vs. MuseGAN (Section 6.1)
-- [Pairs of pseudo-songs proposed to human listeners](./Surveys/Experiment_I_CONLON_vs_MuseGAN_Pairs/)
-- [Spreasheet](./Surveys/Experiment_I_CONLON_vs_MuseGAN.xlsx)
-
-### Pianorolls vs. CONLON pianorolls (Section 6.2)
-- [Pairs of pseudo-songs proposed to human listeners](./Surveys/Experiment_II_Pianorolls_Pairs/)
-- [Spreasheet](./Surveys/Experiment_II_Pianorolls.xlsx)
-
-### Development over time (Section 6.3)
-- [Pseudo-songs](./Surveys/Experiment_III_Development/)
-- [Spreasheet](./Surveys/Experiment_III_Development.xlsx)
-
-
-## Source code
-We are sorry that source code cannot be provided at this time. The [WAE implementation of Ilya Tolstikhin](https://github.com/tolstikhin/wae) is a good starting point for developing the generative model.
 
 ## Acknowledments
 We would like to thank Fabio Schoen for useful discussions. We are grateful to Volker Böhm (Musik Akademie Basel/Fachhochschule Nordwestschweiz),  Luigi Ceccarelli (Conservatorio di Latina), Marek Choloniewski (SME studio, Music Academy of Krakow, University of Krakow), Josef Gruendler (FH Joanneum, Graz), Michał Janocha (SMEAMuz, Poznań), Marco Ligabue (Academia di Belle Arti di Firenze), Adam Stanović (University of Sheffield), and Alla Zagaykevych (National Music Academy of Ukraine) for they valuable help in recruiting musicians who were involved in the listening surveys.
