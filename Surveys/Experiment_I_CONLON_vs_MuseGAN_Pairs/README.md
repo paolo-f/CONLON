@@ -12,3 +12,6 @@
 
 - [Pair 5/Track A.mp3](./Pair%205/Track%20A.mp3)
 - [Pair 5/Track B.mp3](./Pair%205/Track%20B.mp3)
+
+- [Pair 6/Track A.mp3](./Pair%206/Track%20A.mp3)
+- [Pair 6/Track B.mp3](./Pair%206/Track%20B.mp3)
